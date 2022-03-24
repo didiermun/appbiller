@@ -10,7 +10,7 @@ import { ETokenStatus } from 'src/shared/enums/ETokenStatus';
 import { Repository } from 'typeorm';
 import { MeterService } from '../meter/meter.service';
 import { createTransactionDto } from './dto/createTransactionDto';
-import { Transaction } from './entities/Transaction-.entity';
+import { Transaction } from './entities/electricity-selling.entity';
 
 @Injectable()
 export class TransactionService {

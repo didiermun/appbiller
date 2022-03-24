@@ -2,20 +2,20 @@ version: '3.8'
 
 services: 
   backend:
-    image: bestverie/biller-backend:latest
+    image: didier3438/webbiller:latest
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build: 
-      context: biller-backend
+      context: webbiller
       dockerfile: Dockerfile
     ports:
       - '3000:3000'
   frontend:
-    image: bestverie/biller-frontend:latest
+    image: didier3438/mbills:latest
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build: 
-      context: biller-frontend
+      context: mbills
       dockerfile: Dockerfile
     ports:
       - '4000:4000'

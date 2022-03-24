@@ -6,7 +6,7 @@ services:
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build: 
-      context: webbilling
+      context: billers-api
       dockerfile: Dockerfile
     ports:
       - '3000:3000'
@@ -15,7 +15,7 @@ services:
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build: 
-      context: mbills
+      context: m-bills
       dockerfile: Dockerfile
     ports:
       - '4000:4000'

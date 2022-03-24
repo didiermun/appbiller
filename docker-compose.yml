@@ -2,11 +2,11 @@ version: '3.8'
 
 services: 
   backend:
-    image: didier3438/webbiller:latest
+    image: didier3438/webbilling:latest
     stdin_open: true # docker run -i
     tty: true # docker run -t
     build: 
-      context: webbiller
+      context: webbilling
       dockerfile: Dockerfile
     ports:
       - '3000:3000'

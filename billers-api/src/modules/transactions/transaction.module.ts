@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { MeterModule } from '../meter/meter.module';
 import { TransactionController } from './transaction.controller';
 import { TransactionService } from './transaction.service';
-import { Transaction } from './entities/Transaction-.entity';
+import { Transaction } from './entities/electricity-selling.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Transaction]), MeterModule],
